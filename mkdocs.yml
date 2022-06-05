@@ -33,9 +33,6 @@ nav:
     - Deadlines:                              "courses/esc/deadlines.md"
     - Info:                                   "courses/esc/to_know.md"
   - ML:
-    - HW:
-      - HW1:                                  "courses/ml/hw/hw1/hw1.md"
-      # - HW1C:                                 "courses/ml/hw/hw1/Q3 and Q4/HW1_notebook_questions.ipynb"
     - Notes:
       - Intro:                                "courses/ml/notes/w1/intro.md"
       - Perceptron:                           "courses/ml/notes/w1/perceptron.md"
@@ -44,6 +41,9 @@ nav:
       - K Means:                              "courses/ml/notes/w3/kmeans.md"
     - Deadlines:                              "courses/ml/deadlines.md"
     - Info:                                   "courses/ml/to_know.md"
+    - HW:
+      - HW1:                                  "courses/ml/hw/hw1/hw1.md"
+      # - HW1C:                                 "courses/ml/hw/hw1/Q3 and Q4/HW1_notebook_questions.ipynb"
   - CMS:
     - Notes:
       - Org Sim:                              "courses/hass/notes/w1/org_be_sim.md"
