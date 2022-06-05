@@ -1,0 +1,139 @@
+docs_dir:           "docs/"
+
+edit_uri:           "tree/main/docs"
+
+repo_name:          "T5-Notes"
+repo_url:           "https://github.com/Divy1211/T5-Notes/"
+
+site_author:        "Divy Chandra"
+site_description:   "Personal Notes"
+site_name:          "T5 Notes 2022"
+site_url:           "https://divy1211.github.io/T5-Notes/"
+
+use_directory_urls: true
+
+nav:
+  - CSE:
+    - Notes:
+      - Resource Allocation:                  "courses/cse/notes/w1/res_alloc.md"
+      - Memory Management:                    "courses/cse/notes/w2/mem_man.md"
+      - OS Services:                          "courses/cse/notes/w3/services.md"
+      - System Calls:                         "courses/cse/notes/w3/svcs.md"
+      - OS Structure:                         "courses/cse/notes/w3/os_struct.md"
+      - Process Scheduling:                   "courses/cse/notes/w4/proc_scd.md"
+    - Deadlines:                              "courses/cse/deadlines.md"
+    - Info:                                   "courses/cse/to_know.md"
+  - ESC:
+    - Notes:
+      - SW Dev Methods:                       "courses/esc/notes/w1/swdev_methods.md"
+      - UML:                                  "courses/esc/notes/w2/uml.md"
+      - Sequence Diagram:                     "courses/esc/notes/w3/seq_diag.md"
+      - Class Diagram:                        "courses/esc/notes/w3/class_diag.md"
+      - State Machine Diagram:                "courses/esc/notes/w3/sm_diag.md"
+    - Deadlines:                              "courses/esc/deadlines.md"
+    - Info:                                   "courses/esc/to_know.md"
+  - ML:
+    - HW:
+      - HW1:                                  "courses/ml/hw/hw1/hw1.md"
+      # - HW1C:                                 "courses/ml/hw/hw1/Q3 and Q4/HW1_notebook_questions.ipynb"
+    - Notes:
+      - Intro:                                "courses/ml/notes/w1/intro.md"
+      - Perceptron:                           "courses/ml/notes/w1/perceptron.md"
+      - Hinge Loss:                           "courses/ml/notes/w2/hinge_loss.md"
+      - Regression:                           "courses/ml/notes/w2/regression.md"
+      - K Means:                              "courses/ml/notes/w3/kmeans.md"
+    - Deadlines:                              "courses/ml/deadlines.md"
+    - Info:                                   "courses/ml/to_know.md"
+  - CMS:
+    - Notes:
+      - Org Sim:                              "courses/hass/notes/w1/org_be_sim.md"
+      - Critical Thinking:                    "courses/hass/notes/w2/critical.md"
+    - Deadlines:                              "courses/hass/deadlines.md"
+    - Info:                                   "courses/hass/to_know.md"
+
+markdown_extensions:
+  - attr_list
+  - admonition                # Create not and warning boxes        https://squidfunk.github.io/mkdocs-material/reference/admonitions/#admonition
+  - md_in_html
+  - pymdownx.caret            # Handling sub- and superscripts      https://facelessuser.github.io/pymdown-extensions/extensions/caret/
+  - pymdownx.critic           #                                     https://facelessuser.github.io/pymdown-extensions/extensions/critic/
+  - pymdownx.details          # Collapsable elements                https://facelessuser.github.io/pymdown-extensions/extensions/details/
+  - pymdownx.inlinehilite     # Inline code highlighting            https://facelessuser.github.io/pymdown-extensions/extensions/inlinehilite/
+  - pymdownx.keys             # Add styling keyboard keys           https://facelessuser.github.io/pymdown-extensions/extensions/keys/
+  - pymdownx.mark             # Highlighting of text                https://facelessuser.github.io/pymdown-extensions/extensions/mark/
+  - pymdownx.smartsymbols     # Creating special characters         https://facelessuser.github.io/pymdown-extensions/extensions/smartsymbols/
+  - pymdownx.snippets         #                                     https://facelessuser.github.io/pymdown-extensions/extensions/snippets/
+  - pymdownx.superfences
+  - pymdownx.tabbed           # Tabs                                https://facelessuser.github.io/pymdown-extensions/extensions/tabbed/
+  - pymdownx.tasklist         #                                     https://facelessuser.github.io/pymdown-extensions/extensions/tasklist/
+  - pymdownx.tilde            # Strikethrough of text               https://facelessuser.github.io/pymdown-extensions/extensions/tilde/
+  - pymdownx.arithmatex:      # Preserve LaTeX math equations       https://facelessuser.github.io/pymdown-extensions/extensions/arithmatex/
+      generic: true
+  - pymdownx.emoji:           # Emojis                              https://facelessuser.github.io/pymdown-extensions/extensions/emoji/
+      emoji_index:     !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight:       # Highlighting code blocks            https://facelessuser.github.io/pymdown-extensions/extensions/highlight/
+      linenums:     true
+      use_pygments: true
+  - pymdownx.superfences:     # Complicated code fences             https://facelessuser.github.io/pymdown-extensions/extensions/superfences/
+      custom_fences:
+        - name:   mermaid
+          class:  mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tasklist:        # Creating Check-able tasklist        https://facelessuser.github.io/pymdown-extensions/extensions/tasklist/
+      custom_checkbox:    true
+      clickable_checkbox: true
+  - toc:
+      permalink: true
+plugins:
+  # - mknotebooks
+  - search:
+      lang: en
+      separator: '[\s\-\.\_]+'
+
+theme:
+  # favicon:
+  language: en
+  name: material
+  features:
+    - content.code.annotate
+    - navigation.expand
+    - navigation.indexes
+    # - navigation.instant
+    # - navigation.sections
+    - navigation.tabs
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    # - toc.integrate
+  font:
+    text: Times New Roman
+    code: Consolas
+  icon:
+    logo: octicons/file-code-24
+    admonition:
+      abstract: octicons/checklist-16
+      bug:      octicons/bug-16
+      danger:   octicons/zap-16
+      example:  octicons/beaker-16
+      failure:  octicons/x-circle-16
+      info:     octicons/info-16
+      note:     octicons/tag-16
+      success:  octicons/check-16
+      tip:      octicons/squirrel-16
+      question: octicons/question-16
+      quote:    octicons/quote-16
+      warning:  octicons/alert-16
+  palette:
+    scheme:  slate
+    primary: red
+    accent:  red
+extra_javascript:
+  - js/maths.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js
+
+extra_css:
+  - ./css/style.css
