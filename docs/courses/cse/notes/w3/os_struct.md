@@ -105,7 +105,7 @@ The kernel provides FS management, CPU scheduling, memory management, and other 
 1. Pros: distinct performance advantage due to little overhead in SVC/communication within the kernel.
 2. Cons: difficult to implement and maintain.
 
-Other monolithic dual mode oS: BSD and Solaris
+Other monolithic dual mode OS: BSD and Solaris
 
 ### Layered Approach
 
@@ -114,10 +114,12 @@ OS broken into layers, layer 0 is hardware layer and layer N is user interface l
 ![layers](https://natalieagus.github.io/50005/assets/images/week2/10.png)
 
 Pros:
+
 1. Simple to make and debug
 2. Each layer is implemented with only the lower layer's operations - maintainability, abstraction
 
 Cons:
+
 1. Appropriately defining the layers and planning
 2. Assume that the layer below our's works correctly
 3. Assume that the bug is in our code, not a compiler
@@ -135,9 +137,11 @@ very small kernel that provides minimal proc and mem man, in addition to communi
 3. Scheduling
 
 Pros:
+
 1. Extending the OS is easier as all new services are added to the user space and do not require constant modification of the kernel.
 
 Cons:
+
 1. Overhead due to frequent context switches. Example: Mach, Windows NT (first release was a microkernel).
 
 ### Hybrid Approach

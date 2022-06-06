@@ -103,7 +103,7 @@ In case of multiple interrupts, the kernel scheduler decides which requests to s
 1. I/O Device receives physical input
 2. Device controller triggers an IRQ
 3. CPU senses the IRQ and jumps to the interrupt handler
-4. Handler saves the current process' state and determines the sourc eof the interrupt (vectored/polling) and performs the necessary handling
+4. Handler saves the current process' state and determines the source of the interrupt (vectored/polling) and performs the necessary handling
 5. This involves transferring the data from the device controller buffer to the RAM
 6. The handler clears the IRQ signal
 7. Restores the state of the process which it interrupted and performs a jump to the exception pointer
