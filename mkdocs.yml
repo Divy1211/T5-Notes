@@ -21,6 +21,7 @@ nav:
       - System Calls:                         "courses/cse/notes/w3/svcs.md"
       - OS Structure:                         "courses/cse/notes/w3/os_struct.md"
       - Process Scheduling:                   "courses/cse/notes/w4/proc_scd.md"
+      - Process Operations:                   "courses/cse/notes/w4/proc_ops.md"
     - Deadlines:                              "courses/cse/deadlines.md"
     - Info:                                   "courses/cse/to_know.md"
   - ESC:

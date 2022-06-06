@@ -49,3 +49,25 @@ The advantages of rapid context switching is that it gives the **illusion** of c
 
 The drawbacks of context switches is pure **overhead** related to saving and restoring a context. Context switch times are highly dependent on hardware support, some hardware support rapid context switching out of the box, and circumvent the CPU entirely by having a dedicated unit for it.
 
+## Mode Switch
+
+1. The privilege of a process changes. Simply escalates privilege from user mode to kernel mode to access kernel services.
+2. Done by either: hardware interrupts, system calls (traps, software interrupt), exception, or reset
+3. Mode switch may not always lead to context switch. Depending on implementation, Kernel code decides whether or not it is necessary.
+
+## Process Scheduling Queues
+
+There are several scheduling queues that are maintained by the kernel scheduler:
+
+1. **Job** Queue: Set of all processes in the system (may be in swap space or RAM)
+2. **Ready** Queue: Set of all processes residing in the main memory which are ready to be executed by the CPU (queuing for CPU time)
+3. **Device** Queues: Set of processes that are waiting for some form of I/O from a device. One queue is maintained per device
+
+![Queues](https://natalieagus.github.io/50005/assets/images/week3/5.png)
+
+![Queue Diagram](https://natalieagus.github.io/50005/assets/images/week3/6.png)
+
+### Long term and Short term Schedulers
+
+![LTSTS](https://natalieagus.github.io/50005/assets/images/week3/7.png)
+
