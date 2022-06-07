@@ -40,6 +40,7 @@ nav:
       - Hinge Loss:                           "courses/ml/notes/w2/hinge_loss.md"
       - Regression:                           "courses/ml/notes/w2/regression.md"
       - K Means:                              "courses/ml/notes/w3/kmeans.md"
+      - Support Vector Machines:              "courses/ml/notes/w3/svm.md"
     - Deadlines:                              "courses/ml/deadlines.md"
     - Info:                                   "courses/ml/to_know.md"
     - HW:

@@ -1,5 +1,8 @@
 ## SWDev Life Cycle
 
+Analysis Diagram
+![anadiag](./imgs/anadiag.png)
+
 1. Requirements
       1. List candidate requirements
       2. Understand the system context through domain modelling and business modelling
