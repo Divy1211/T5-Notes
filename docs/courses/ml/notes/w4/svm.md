@@ -15,4 +15,21 @@ The geometric margin of the entire training set is $\min\limits_{t = 1, ..., n}\
 
 So our problem of finding a "maximally removed" classifier is equivalent to maximising this geometric margin.
 
-To minimise the geometric
+Note that maximising this geometric margin is equivalent to minimising $||\theta||$ which is equivalent to minimising $\cfrac{1}{2} ||\theta||^2$. Additionally, this minimisation problem is subject to the constraints that $y^{(t)}(\theta^T x^{(t)} + \theta_0) \geq 1 \; \forall \; t$. The choice for the $1$ on the right side of the constraint is arbitrary, any positive number would suffice (it implies that all points must be classified correctly)
+
+If we two points exactly on the two marins $\theta^T x_+ + \theta_0 = 1$ and $\theta^T x_- + \theta_0 = -1$, then, the difference vector between the two points can be obtained by: $x_+ - x_-$. Now to get the width of the margin, we project it along the normal direction to the hyperplane:
+
+$\cfrac{(x_+ - x_-) \cdot \theta}{||\theta||}$
+
+$\cfrac{(1-\theta_0 - (-1-\theta_0))}{||\theta||}$
+
+$\cfrac{(1-\theta_0 +1+\theta_0))}{||\theta||}$
+
+$\cfrac{2}{||\theta||}$
+
+Once again, to maximise this (the width of the margin) we can minimise $||\theta||$, to which end we can minimise:
+
+**Primal Form:** $\cfrac{||\theta||^2}{2}$, subject to $y^{(t)}(\theta^T x^{(t)} + \theta_0) \geq 1$
+
+The dual form of this can thus be obtained with lagrange multipliers
+
