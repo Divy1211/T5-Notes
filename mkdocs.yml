@@ -22,6 +22,8 @@ nav:
       - OS Structure:                         "courses/cse/notes/w3/os_struct.md"
       - Process Scheduling:                   "courses/cse/notes/w4/proc_scd.md"
       - Process Operations:                   "courses/cse/notes/w4/proc_ops.md"
+      - InterProcess Communication:           "courses/cse/notes/w4/ipc.md"
+      - Threads:                              "courses/cse/notes/w4/threads.md"
     - Deadlines:                              "courses/cse/deadlines.md"
     - Info:                                   "courses/cse/to_know.md"
   - ESC:
@@ -51,6 +53,7 @@ nav:
     - Notes:
       - Org Sim:                              "courses/hass/notes/w1/org_be_sim.md"
       - Critical Thinking:                    "courses/hass/notes/w2/critical.md"
+      - Four Aspects:                         "courses/hass/notes/w4/crit.md"
     - Deadlines:                              "courses/hass/deadlines.md"
     - Info:                                   "courses/hass/to_know.md"
 
