@@ -41,6 +41,8 @@ Thus, the algo becomes
 2. Pick $t \in \{1, 2, ..., n\}$
 3. $\theta^{(k+1)} = \theta^{(k)} + \eta_k (y^{(t)} - \theta^T x^{(t)})x^{(t)}$
 
+Once we go through the entire dataset once, we call it ONE epoch
+
 Here, $\eta_k = \cfrac{1}{k+1}$
 
 ### Closed Form Optimal Solution For Least Squares Criterion
