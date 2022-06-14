@@ -68,7 +68,7 @@ These algorithms guarantee that we find a **local min** of the cost function, no
 
 Elbow method is used to select the optimal value of $k$. The *minimum description length principle* (casting clustering as a connection problem) or *Gap statistics* (characterising how much our cost would descrease if there are no additional cluster sections exists). We will consider the question of choosing $k$ in a scenario where we use clustering to help semi supervised learning.
 
-## K-Fold Corss Validation
+## K-Fold Cross Validation
 
 In semi supervised learning problems, we have access to a small set of labeled data and a large set of unlabeled data. When there are few input points and the dimensionality of the feature vectors is high, a linear classifier would overfit, but we can use the unlabeled data to reduce the dimensionality of the feature vectors.
 

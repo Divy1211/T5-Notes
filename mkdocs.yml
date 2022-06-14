@@ -43,12 +43,14 @@ nav:
       - Regression:                           "courses/ml/notes/w2/regression.md"
       - K Means:                              "courses/ml/notes/w3/kmeans.md"
       - Support Vector Machines:              "courses/ml/notes/w4/svm.md"
-      - Logistic Regression:              "courses/ml/notes/w5/log_reg.md"
+      - Logistic Regression:                  "courses/ml/notes/w4/log_reg.md"
     - Deadlines:                              "courses/ml/deadlines.md"
     - Info:                                   "courses/ml/to_know.md"
     - HW:
       - HW1:                                  "courses/ml/hw/hw1/hw1.md"
       # - HW1C:                                 "courses/ml/hw/hw1/Q3 and Q4/HW1_notebook_questions.ipynb"
+      - HW2:                                  "courses/ml/hw/hw2/hw2.md"
+      # - HW2C:                                 "courses/ml/hw/hw2/Hmk_2_Questions.ipynb"
   - CMS:
     - Notes:
       - Org Sim:                              "courses/hass/notes/w1/org_be_sim.md"
