@@ -1,0 +1,101 @@
+.md-header {
+     box-shadow: 0px 0px 15px -5px #000000 !important;
+}
+
+.md-tabs {
+     background-color: #bc4240 !important;
+     box-shadow: 0px 0px 15px -5px #000000 !important;
+}
+
+h2 { 
+     color: #BABABA !important;
+}
+h3, h4 { 
+     color: #c0c0c0 !important;
+}
+
+body {
+     background-color: #222222 !important;
+}
+
+.highlighttable .linenos {
+     background-color: #111111 !important;
+}
+
+.md-typeset code {
+     background-color: #111111 !important;
+}
+
+.md-footer {
+     background-color: #111111;
+     z-index: 100;
+}
+
+.md-footer-meta {
+     background-color: #000000;
+}
+
+/* width */
+::-webkit-scrollbar {
+     width: 5px !important;
+}
+   
+/*Track */
+::-webkit-scrollbar-track {
+     background-color: transparent !important;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+     background: #5b5c67 !important;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+     background: #ff1947 !important;
+}
+
+.admonition.abstract,
+.admonition.bug,
+.admonition.danger,
+.admonition.example,
+.admonition.failure,
+.admonition.info,
+.admonition.note,
+.admonition.success,
+.admonition.tip,
+.admonition.question,
+.admonition.quote,
+.admonition.warning {
+     box-shadow: 3px 3px 5px 0px #111111;
+}
+
+tr td, table {
+     border-width: 0 !important;
+}
+
+tr th {
+     background-color:#ef5552 !important;
+     color: #000000;
+}
+
+tr:nth-child(even) {
+     background-color: #2b2b2b !important;
+}
+
+tr:nth-child(odd) {
+     background-color: #1E2021 !important;
+}
+
+tr:hover {
+     background-color: #63696E !important;
+}
+
+
+table {
+     box-shadow: 3px 3px 5px 0px #111111;
+}
+
+.arithmatex {
+     font-size: 1em;
+}
