@@ -24,6 +24,12 @@ nav:
       - Process Operations:                   "courses/cse/notes/w4/proc_ops.md"
       - InterProcess Communication:           "courses/cse/notes/w4/ipc.md"
       - Threads:                              "courses/cse/notes/w4/threads.md"
+      - Race Conditions:                      "courses/cse/notes/w5/race.md"
+      - Solutions:                            "courses/cse/notes/w5/sol.md"
+      - Java Sync:                            "courses/cse/notes/w5/java_sync.md"
+      - Deadlocks:                            "courses/cse/notes/w5/deadlock.md"
+      - File System:                          "courses/cse/notes/w6/fs.md"
+      - Networks:                             "courses/cse/notes/w8/networks.md"
     - Deadlines:                              "courses/cse/deadlines.md"
     - Info:                                   "courses/cse/to_know.md"
   - ESC:
@@ -36,6 +42,7 @@ nav:
     - Deadlines:                              "courses/esc/deadlines.md"
     - Info:                                   "courses/esc/to_know.md"
   - ML:
+    - Relevant Linear Algebra:              "courses/ml/rel_linalg.md"
     - Notes:
       - Intro:                                "courses/ml/notes/w1/intro.md"
       - Perceptron:                           "courses/ml/notes/w1/perceptron.md"
@@ -44,6 +51,9 @@ nav:
       - K Means:                              "courses/ml/notes/w3/kmeans.md"
       - Support Vector Machines:              "courses/ml/notes/w4/svm.md"
       - Logistic Regression:                  "courses/ml/notes/w4/log_reg.md"
+      - Neural Networks:                      "courses/ml/notes/w5/nn.md"
+      - Generative Models:                    "courses/ml/notes/w6/gm.md"
+      - Mixture Models:                       "courses/ml/notes/w6/mm.md"
     - Deadlines:                              "courses/ml/deadlines.md"
     - Info:                                   "courses/ml/to_know.md"
     - HW:
@@ -51,6 +61,9 @@ nav:
       # - HW1C:                                 "courses/ml/hw/hw1/Q3 and Q4/HW1_notebook_questions.ipynb"
       - HW2:                                  "courses/ml/hw/hw2/hw2.md"
       # - HW2C:                                 "courses/ml/hw/hw2/Hmk_2_Questions.ipynb"
+      - HW3:                                  "courses/ml/hw/hw3/hw3.md"
+      - HW4:                                  "courses/ml/hw/hw4/hw4.md"
+
   - CMS:
     - Notes:
       - Org Sim:                              "courses/hass/notes/w1/org_be_sim.md"

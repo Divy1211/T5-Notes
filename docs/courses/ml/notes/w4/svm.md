@@ -13,6 +13,8 @@ This is the geometric margin (of the point $t$), the functional margin is geomet
 
 The geometric margin of the entire training set is $\min\limits_{t = 1, ..., n}\gamma^{(t)}$
 
+the function $h(x) = \theta^T x + \theta_0$ is known as the discriminant function
+
 So our problem of finding a "maximally removed" classifier is equivalent to maximising this geometric margin.
 
 Note that maximising this geometric margin is equivalent to minimising $||\theta||$ which is equivalent to minimising $\cfrac{1}{2} ||\theta||^2$. Additionally, this minimisation problem is subject to the constraints that $y^{(t)}(\theta^T x^{(t)} + \theta_0) \geq 1 \; \forall \; t$. The choice for the $1$ on the right side of the constraint is arbitrary, any positive number would suffice (it implies that all points must be classified correctly)
@@ -31,7 +33,9 @@ Once again, to maximise this (the width of the margin) we can minimise $||\theta
 
 **Primal Form:** Minimise: $\cfrac{||\theta||^2}{2}$, subject to $y^{(t)}(\theta^T x^{(t)} + \theta_0) \geq 1$
 
-Enter Lagrange Multipliers (dual):
+Enter KKT (dual):
+
+(Remember the complementary slackness condition and the dual feasibility condition imposed by KKT on the solution)
 
 $L = \cfrac{||\theta||^2}{2} - \sum\limits_{i = 1}^{n} \alpha_i \left(y_i (\theta^T \vec{x_i} + \theta_0) - 1 \right)$
 
@@ -79,19 +83,17 @@ In the real world, data is often not nice and not linearly separable. In that ca
 
 To make this work, our original optimisation problem is modified in the following way:
 
-**Primal Form:** Minimise: $\cfrac{\lambda}{2}||\theta||^2 + \sum\limits_{t}\xi^{(t)}$, subject to $y^{(t)}(\theta^T x^{(t)} + \theta_0) \geq 1 - \xi^{(t)}$ where $\xi^{(t)} \geq 0$
+**Primal Form:** Minimise: $\cfrac{\lambda}{2}||\theta||^2 + \sum\limits_{t}\xi^{(t)}$, subject to $y^{(t)}(\theta^T x^{(t)} + \theta_0) \geq 1 - \xi^{(t)}$ and $\xi^{(t)} \geq 0$
 
 Here, $\lambda$ is a regularisation parameter. Increasing its value means we give more importance to minimising $||\theta||$ and lesser importance to actually satisfy the classification constraints, since if we increase $\lambda$, the $||\theta||$ term dominates the expression
 
-Enter lagrange multipliers:
+Enter KKT (dual):
 
-Enter Lagrange Multipliers (dual):
-
-$L = \cfrac{\lambda}{2}||\theta||^2 + \sum\limits_{i = 1}^{n} \xi_i - \sum\limits_{i = 1}^{n} \alpha_i \left(y_i (\theta^T \vec{x_i} + \theta_0) - 1 + \xi_i \right)$
+$L = \cfrac{\lambda}{2}||\theta||^2 + \sum\limits_{i = 1}^{n} \xi_i - \sum\limits_{i = 1}^{n} \alpha_i \left(y_i (\theta^T \vec{x_i} + \theta_0) - 1 + \xi_i \right) - \sum\limits_{i = 1}^n \mu_i \xi_i$
 
 Convert to vector form:
 
-$L = \cfrac{\lambda}{2}\theta^T\theta + \xi^T \vec{1} - \alpha^T \left(Y (X^T \theta + \theta_0 \vec{1}) - \vec{1} + \xi \right)$
+$L = \cfrac{\lambda}{2}\theta^T\theta + \xi^T \vec{1} - \alpha^T \left(Y (X^T \theta + \theta_0 \vec{1}) - \vec{1} + \xi \right) - \mu^T \xi$
 
 $\cfrac{\partial L}{\partial \theta} = \lambda\theta - X Y \alpha = 0$
 
@@ -105,11 +107,23 @@ $\alpha^T Y \vec{1} = 0 \;\ ... \;\;\;\; (ii)$
 
 non vector form: $\sum\limits_{i}\alpha_i y_i  = 0$
 
-$\cfrac{\partial L}{\partial \xi} = \vec{1} - \alpha = 0$
+$\cfrac{\partial L}{\partial \xi} = \vec{1}^T - \alpha^T - \mu^T = 0$
 
-$\alpha = \vec{1} \;\ ... \;\;\;\; (iii)$ ???
+$\alpha = \vec{1} - \mu \;\ ... \;\;\;\; (iii)$
 
-Apparently somehow we get the same dual expression and $\alpha \in (0, 1/\lambda)$ for SV and $\alpha \geq 1/\lambda$ for margin violations
+non vector form: $\alpha_i = 1 - \mu_i$
+
+Using these relations in the Lagrangian:
+
+$L = \cfrac{\alpha^T Y X^T X Y \alpha}{2\lambda} + \xi^T \vec{1} - \alpha^T Y (\cfrac{X^T X Y \alpha}{\lambda} + \theta_0 \vec{1}) + \alpha^T \vec{1} - \alpha^T \xi - \mu^T \xi$
+
+$L = \cfrac{\alpha^T Y X^T X Y \alpha}{2\lambda} + \xi^T \vec{1} - \cfrac{\alpha^T Y X^T X Y \alpha}{\lambda} + \alpha^T \vec{1} - (\vec{1} - \mu)^T \xi - \mu^T \xi$
+
+$L = \alpha^T \vec{1} - \cfrac{\alpha^T Y X^T X Y \alpha}{2\lambda}$
+
+By KKT, we have:
+
+$\alpha \in (0, 1/\lambda)$ for SV and $\alpha = 1/\lambda$ for margin violations
 
 ## The Kernel Method
 
