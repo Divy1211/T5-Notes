@@ -1,0 +1,8 @@
+A paradigm is a set of very basic meta theoretical assumptions which form the basis of the frame of reference, the modes of theorising and operation for social theorists who operate within them. Through these fundamental assumptions, paradigms provide the foundational tools for carrying out analysis and deduction of facts about an organisation. Different paradigms allow us to view and analyse organisations from different competing viewpoints.
+
+The home paradigm is the philosophical perspective that a person feels the most comfortable with, and the perspective with which they are most likely to view the world. My home paradigm is probably the functionalist, as I try to be as rational and practical as possible in any situation (eg: will save 5 people in the trolley problem), and my approach to any situation is problem driven (find the issue, think about how to fix the issue objectively).
+
+The two most significant limitations are:
+
+1. The subjective-objective labels which are used to distinguish between the four paradigms are socially contrived. In other words, what counts as subjective or objective is a "subjective" question in itself. Using them as the basis for "fundamental" assumptions and separation of paradigms is contradictory because they no longer remain fundamental but are subject to debate themselves
+2. Secondly, the subjective-objective separation leads many to associate objectivity with quantitative analysis and subjectivity with qualitative analysis. Due to this, a lot of people misunderstand the difference between the two, believing that the difference is just different methods of collecting data. This undermines the actual importance of a particular method of data collection which is the ultimate purpose/goal for the research.

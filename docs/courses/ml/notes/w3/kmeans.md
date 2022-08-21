@@ -2,7 +2,9 @@
 
 When there are no labels $y^{(i)}$ to classify the data points accordingly, we use unsupervised learning. Instead of classification, the goal of unsupervised learning is to identify structures/patterns in the data.
 
-Input: $S_n = \{ x^{(i)}, 1, ..., n \}$ where $x^{(i)} \in \mathbb{R}^d, integer $k$$
+Input: $S_n = \{ x^{(i)}, 1, ..., n \}$ where $x^{(i)} \in \mathbb{R}^d$
+
+integer $k$
 
 Output: Set of clusters $C_1, ..., C_k$
 

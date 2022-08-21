@@ -1,4 +1,4 @@
-## Components of a network
+f## Components of a network
 
 1. End systems, **clients** running network apps
 2. Communication links: fiber optics, radio
@@ -36,5 +36,14 @@ A network of networks - Interconnected ISP
         - Packet occupies the link on demand only
         - FDM or TDM - fixed dedicated fraction of link
 3. Complex interacting components
+    - Many pieces to a network: naming, routing, reliability, lots of apps
+    - Emergent Behaviour
+    - Layering reduces interactions from $\mathcal{O}(N^2)$ to $\mathcal{O}(N)$ where $N$ is the number of modules
+    - Internet protocol stack:
+        - Application (FTP, HTTP)
+        - Transport (TCP, UDP)
+        - Network (IP, routing)
+        - Link: data transfer b/n neighbouring network elements (Ethernet, Wifi)
+        - Physical: Hardware
+        - Cascaded headers
 4. Scalability
-5. 

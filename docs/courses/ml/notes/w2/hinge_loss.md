@@ -45,7 +45,6 @@ if $y^{(t)}((\theta^{(t)})^T x^{(t)}) \leq 1$ then
 $\theta^{(k+1)} = \theta^{(k)} + \eta_k y^{(t)} x^{(t)}$
 
 The differences from the perceptron algorithm are:
-
    
 1. The mistakes are penalised linearly, instead of in a binary fassion
 2. Here, the $\eta_k$ is decreased over the iterations, instead of being fixed
