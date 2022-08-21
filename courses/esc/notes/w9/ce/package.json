@@ -1,0 +1,14 @@
+{
+  "name": "ce",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/ce.js",
+  "scripts": {
+    "run": "node .\\src\\ce.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mongodb": "^4.8.0"
+  }
+}
